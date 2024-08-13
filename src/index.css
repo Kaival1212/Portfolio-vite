@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.hds {
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.hds::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+/* @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animate-gradient {
+    background: linear-gradient(45deg, #000000, #111827);
+    background-size: 300% 300%;
+    animation: gradient 10s ease infinite;
+ 
+} 
+*/
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 100%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 0%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animate-gradient {
+    background: linear-gradient(
+        135deg,
+        #000000,
+        #0a0f1a,
+        #111827,
+        #1f2937,
+        #111827,
+        #0a0f1a,
+        #000000
+    );
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Add to your global CSS file */
+@media (max-width: 767px) {
+    .animate-text {
+        animation: none !important;
+        transform: none !important;
+        opacity: 1 !important;
+    }
+}
