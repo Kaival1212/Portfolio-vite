@@ -27,23 +27,18 @@ const App = () => {
 
       <Helmet>
         <title>Kaival's Portfolio</title>
-        <meta name="description" content="I'm Kaival Patel, a passionate developer and creator with a deep love for technology and innovation. I thrive on solving complex problems and bringing ideas to life through code and design." />
-
-        <meta itemprop="name" content="Kaival's Portfolio" />
-        <meta itemprop="description" content="I'm Kaival Patel, a passionate developer and creator with a deep love for technology and innovation. I thrive on solving complex problems and bringing ideas to life through code and design." />
-        <meta itemprop="image" content="http://localhost:5173/memoji.png" />
-
+        <meta name="description" content="I'm Kaival Patel, a passionate developer..." />
         <meta property="og:url" content="https://kaival.co.uk/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Kaival's Portfolio" />
-        <meta property="og:description" content="I'm Kaival Patel, a passionate developer and creator with a deep love for technology and innovation. I thrive on solving complex problems and bringing ideas to life through code and design." />
-        <meta property="og:image" content="http://localhost:5173/memoji.png" />
-
+        <meta property="og:description" content="I'm Kaival Patel, a passionate developer..." />
+        <meta property="og:image" content="https://kaival.co.uk/memoji.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Kaival's Portfolio" />
-        <meta name="twitter:description" content="I'm Kaival Patel, a passionate developer and creator with a deep love for technology and innovation. I thrive on solving complex problems and bringing ideas to life through code and design." />
-        <meta name="twitter:image" content="http://localhost:5173/memoji.png" />
+        <meta name="twitter:description" content="I'm Kaival Patel, a passionate developer..." />
+        <meta name="twitter:image" content="https://kaival.co.uk/memoji.png" />
       </Helmet>
+
 
 
       <nav className='flex justify-around w-full items-center p-6 z-50 md:flex-row flex-col fixed backdrop-blur-xl	overflow-x-hidden'>
