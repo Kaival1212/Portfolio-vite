@@ -25,7 +25,7 @@ const App = () => {
     <div className=" animate-gradient  h-auto  relative">
 
 
-      <Helmet>
+      <head>
         <title>Kaival's Portfolio</title>
         <meta name="description" content="I'm Kaival Patel, a passionate developer..." />
         <meta property="og:url" content="https://kaival.co.uk/" />
@@ -37,7 +37,7 @@ const App = () => {
         <meta name="twitter:title" content="Kaival's Portfolio" />
         <meta name="twitter:description" content="I'm Kaival Patel, a passionate developer..." />
         <meta name="twitter:image" content="https://kaival.co.uk/memoji.png" />
-      </Helmet>
+      </head>
 
 
 
