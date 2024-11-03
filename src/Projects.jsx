@@ -44,7 +44,7 @@ function Projects() {
     const isMobileOrTablet = window.innerWidth < 768;
 
     const [titleRef, inTitleView] = useInView({
-        triggerOnce: isMobileOrTablet ? true : false,
+        triggerOnce:  true ,
         threshold: 0.1,
     });
 

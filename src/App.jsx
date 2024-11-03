@@ -6,6 +6,7 @@ import AboutPage from './AboutPage';
 import SkillsPage from './SkillsPage';
 import Projects from './Projects';
 import { Helmet } from 'react-helmet';
+import WorkingOn from './WorkingOn';
 
 
 const App = () => {
@@ -26,20 +27,24 @@ const App = () => {
 
       <Helmet>
         <title>Kaival's Portfolio</title>
-        <meta name="description" content="Explore Kaival's portfolio, showcasing innovative projects, advanced skills, and a deep passion for computer science. Discover a blend of creativity and technical expertise in web development, programming, and problem-solving. Learn more about Kaival's journey, skills, and featured projects." />
-        <meta name="keywords" content="Kaival, portfolio, web development, programming, computer science, projects, skills, frontend, backend, React, JavaScript" />
-        <meta name="author" content="Kaival" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="og:title" content="Kaival's Portfolio - Web Development and Programming Expertise" />
-        <meta property="og:description" content="Explore Kaival's journey in computer science, featuring innovative projects, skills, and passion for coding." />
-        <meta property="og:image" content="/vite.svg" />
-        <meta property="og:url" content="https://www.kaival.co.uk" />
+        <meta name="description" content="I'm Kaival Patel, a passionate developer and creator with a deep love for technology and innovation. I thrive on solving complex problems and bringing ideas to life through code and design." />
+
+        <meta itemprop="name" content="Kaival's Portfolio" />
+        <meta itemprop="description" content="I'm Kaival Patel, a passionate developer and creator with a deep love for technology and innovation. I thrive on solving complex problems and bringing ideas to life through code and design." />
+        <meta itemprop="image" content="http://localhost:5173/memoji.png" />
+
+        <meta property="og:url" content="https://kaival.co.uk/" />
         <meta property="og:type" content="website" />
+        <meta property="og:title" content="Kaival's Portfolio" />
+        <meta property="og:description" content="I'm Kaival Patel, a passionate developer and creator with a deep love for technology and innovation. I thrive on solving complex problems and bringing ideas to life through code and design." />
+        <meta property="og:image" content="http://localhost:5173/memoji.png" />
+
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Kaival's Portfolio - Web Development and Programming Expertise" />
-        <meta name="twitter:description" content="Discover Kaival's innovative projects and deep passion for computer science, showcased in this portfolio." />
-        <meta name="twitter:image" content="/vite.svg" />
+        <meta name="twitter:title" content="Kaival's Portfolio" />
+        <meta name="twitter:description" content="I'm Kaival Patel, a passionate developer and creator with a deep love for technology and innovation. I thrive on solving complex problems and bringing ideas to life through code and design." />
+        <meta name="twitter:image" content="http://localhost:5173/memoji.png" />
       </Helmet>
+
 
       <nav className='flex justify-around w-full items-center p-6 z-50 md:flex-row flex-col fixed backdrop-blur-xl	overflow-x-hidden'>
 
@@ -94,6 +99,19 @@ const App = () => {
             Skills
           </motion.a>
           <motion.a
+            href='#workingon'
+            whileHover={{
+              scale: 1.2,
+              color: "#ff6347",
+              textShadow: "0px 0px 8px rgba(255, 99, 71, 0.8)",
+            }}
+            whileTap={{ scale: 0.9 }}
+            className="cursor-pointer transition ease-in-out duration-200"
+          >
+            Working On
+          </motion.a>
+
+          <motion.a
             href='#projects'
             whileHover={{
               scale: 1.2,
@@ -113,6 +131,7 @@ const App = () => {
       <FrontPage className="text-green-100 flex flex-col md:flex-row justify-around pt-72 p-10  items-center " />
       <AboutPage />
       <SkillsPage />
+      <WorkingOn />
       <Projects />
 
     </div>
