@@ -13,7 +13,7 @@ function WorkingOn() {
             description: 'An AI-based dating platform that connects users based on their interests and preferences. without any subscription fees.',
             tech: 'Laravel + React.js',
             github: 'https://github.com/Kaival1212/LinkUP',
-            preview: 'http://linkup.kaival.co.uk',
+            preview: 'https://letslinkup.uk',
             emoji: '💘'
         },
         {
@@ -86,15 +86,15 @@ function WorkingOn() {
 
                 <div className="flex space-x-4">
                     {project.github &&
-                    <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-400 hover:text-white transition-colors duration-300"
-                    >
-                        <FaGithub size={20} />
-                    </a>
-    }
+                        <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-white transition-colors duration-300"
+                        >
+                            <FaGithub size={20} />
+                        </a>
+                    }
                     {project.preview && (
                         <a
                             href={project.preview}
