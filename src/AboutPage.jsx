@@ -108,7 +108,7 @@ function AboutPage() {
                     transition={{ duration: 0.6 }}
                 >
                     <motion.a
-                        href="/Final.pdf"
+                        href="/KaivalPatelCV.doc"
                         download="Kaival_CV"
                         className="inline-flex items-center gap-2 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
                         whileHover={{ scale: 1.05 }}
